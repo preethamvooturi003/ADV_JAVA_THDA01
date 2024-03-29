@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.atm-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container,
+.transaction-container {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #f8f8f8;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+  background-color: #e6e6e6;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#loginError,
+#transactionResult {
+  color: #d32f2f;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

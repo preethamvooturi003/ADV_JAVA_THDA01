@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>HDFC Net Banking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="th.jpeg" alt="HDFC Banking Logo" class="logo">
+      <h1>HDFC Net Banking</h1>
+      <h3>Welcome to the ATM Portal</h3>
+    </header>
+    <main>
+      <div class="atm-container">
+        <div class="login-container">
+          <h2>Login</h2>
+          <input type="text" placeholder="Account Number" id="accountNumber">
+          <input type="password" placeholder="PIN" id="pin">
+          <button id="loginBtn">Login</button>
+          <div id="loginError"></div>
+        </div>
+        <div class="transaction-container" style="display: none;">
+          <h2>Select Transaction</h2>
+          <select id="transactionType">
+            <option value="">Select Transaction</option>
+            <option value="withdraw">Withdraw Money</option>
+            <option value="deposit">Deposit Money</option>
+            <option value="balance">Check Balance</option>
+            <option value="changePin">Change PIN</option>
+            <option value="statement">Generate Statement</option>
+          </select>
+          <div id="transactionResult"></div>
+          <div id="withdrawInput" style="display: none;">
+            <input type="number" placeholder="Enter amount to withdraw" id="withdrawAmount">
+            <button id="withdrawBtn">Withdraw</button>
+          </div>
+          <div id="depositInput" style="display: none;">
+            <input type="number" placeholder="Enter amount to deposit" id="depositAmount">
+            <button id="depositBtn">Deposit</button>
+          </div>
+          <div id="changePinInput" style="display: none;">
+            <input type="password" placeholder="Enter new PIN" id="newPin">
+            <button id="changePinBtn">Change PIN</button>
+          </div>
+          <div id="statementInput" style="display: none;">
+            <button id="generateStatementBtn">Generate Statement</button>
+          </div>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 HDFC Banking-Made by 21MID0086</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
